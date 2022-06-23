@@ -1,0 +1,132 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-22T23:15:33.407Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat core.Base.openBrowser(Base.java:56)\r\n\tat step.definition.Initializer.beforeHooks(Initializer.java:15)\r\n",
+              "duration": 106019300,
+              "status": "failed"
+            },
+            "match": {
+              "location": "step.definition.Initializer.beforeHooks(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "login to the retail website",
+        "description": "",
+        "id": "retail-website-home-page;login-to-the-retail-website",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat core.Base.tearDown(Base.java:60)\r\n\tat step.definition.Initializer.afterHooks(Initializer.java:21)\r\n",
+              "duration": 2010700,
+              "status": "failed"
+            },
+            "match": {
+              "location": "step.definition.Initializer.afterHooks(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1002100,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "user is on the home page",
+            "match": {
+              "location": "step.definition.HomePageStepDef.user_is_on_the_home_page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user click on MyAccount",
+            "match": {
+              "location": "step.definition.HomePageStepDef.user_click_on_MyAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1997700,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user click on login option",
+            "match": {
+              "location": "step.definition.HomePageStepDef.user_click_on_login_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999700,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user enter user name \"student1@tekschool.us\" and password \"cali123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student1@tekschool.us\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"cali123\"",
+                  "offset": 58
+                }
+              ],
+              "location": "step.definition.HomePageStepDef.user_enter_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user click on the login button",
+            "match": {
+              "location": "step.definition.HomePageStepDef.user_click_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user should be able to logged into account",
+            "match": {
+              "location": "step.definition.HomePageStepDef.user_should_able_to_logged_into_account(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Retail Website Home Page",
+    "description": "",
+    "id": "retail-website-home-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/HomePage.feature",
+    "tags": []
+  }
+]
